@@ -1,0 +1,36 @@
+{
+	"name": "ingenius-hq/hello-laravel",
+	"description": "Test Laravel Package",
+	"require": {
+		"php": "^7.3|7.4|^8.0",
+		"illuminate/support": "^5.8|^6.0|^7.0|^8.0"
+	},
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"IngeniusHq\\HelloLaravel\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Omar Villafuerte",
+			"email": "ovillafuerte.94@gmail.com",
+			"homepage": "https://ovillafuerte94.is-a.dev"
+		}
+	],
+	"extra": {
+		"laravel": {
+			"providers": [
+				"IngeniusHq\\HelloLaravel\\Provider"
+			],
+			"aliases": {
+				"Hello": "IngeniusHq\\HelloLaravel\\Facade"
+			}
+		}
+	},
+	"config": {
+		"sort-packages": true
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}
